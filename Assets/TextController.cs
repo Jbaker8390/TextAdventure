@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class TextController : MonoBehaviour
 {
-
+    //references the TextObjUI
     public Text text;
 
     // Use this for initialization
@@ -19,7 +19,10 @@ public class TextController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            text.text = "Space key pressed";
+            text.text = "You are in a prison cell, and you want to escape. There are" +
+                "some dirty sheets on the bed, a mirror on the wall, and the door " +
+                "is locked from the outside.\n\n" +
+                "Press S to view sheets, M to view MIrror and L to view Lock";
         }
     }
 }
